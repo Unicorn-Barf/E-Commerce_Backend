@@ -14,7 +14,7 @@ router.get('/', async (req, res) => {
         }
       ]
     });
-    res.status(400).json(allTags);
+    res.status(200).json(allTags);
   } catch (error) {
     console.log(error);
     res.status(500).json({ error });
